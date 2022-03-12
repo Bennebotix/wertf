@@ -17,7 +17,8 @@ while True:
   if result.status_code == 200:
     with open("./pins.txt", "a") as file:
       file.writelines(code + "\n")
+      print(code);
 		</script>
-  <embed src="pins.txt">
+  <embed src="./pins.txt">
 	</body>
 </html>
