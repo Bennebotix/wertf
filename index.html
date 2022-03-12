@@ -15,7 +15,7 @@ while True:
     code += random.choice(digits)
   result = is_code_valid(code)
   if result.status_code == 200:
-    with open("pins.txt", "a") as file:
+    with open("./pins.txt", "a") as file:
       file.writelines(code + "\n")
 		</script>
   <embed src="pins.txt">
